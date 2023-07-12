@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@screen print {
+    @page {
+      margin-top: 0in;
+      margin-bottom: 0in;
+      margin-left: 0in;
+      margin-right: 0in;
+    }
+  
+    body {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      color: black !important;
+    }
+  
+    h1, h2, h3, p, li {
+      color: black !important;
+    }
+  
+    html {
+      font-size: 12.288px !important;
+    }
+  }
+  
+  html {
+    font-size: 13.176471px;
+  }
