@@ -13,15 +13,16 @@ module.exports = {
         print: { "raw": "print" },  
       },
       fontFamily: {
-        'sans': ['Lato', ...defaultTheme.fontFamily.sans],
+        'sans': ['Raleway', ...defaultTheme.fontFamily.sans],
       },
       maxWidth: {
-        "a4": "64.609375rem"
+        "a4": "210mm"
+      },
+      width: {
+        "a4": "210mm"
       },
       height: {
-        "a4": "91.350883rem",
-        "a4-col": "77.038383rem",
-        "a4-col-full": "83.350883rem",
+        "a4": "297mm",
       },
     },
   },
