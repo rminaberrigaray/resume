@@ -32,7 +32,9 @@
             <ul class="text-slate-700 text-sm space-y-2 lining-nums">
               <li class="flex items-center space-x-2">
                 <EnvelopeIcon class="w-5 h-5" />
-                <span>rodrigo.minaberrigaray@gmail.com</span>
+                <a href="mailto:rodrigo.minaberrigaray@gmail.com">
+                  rodrigo.minaberrigaray@gmail.com
+                </a>
               </li>
               <li class="flex items-center space-x-2">
                 <MapPinIcon class="w-5 h-5" />
@@ -40,7 +42,9 @@
               </li>
               <li class="flex items-center space-x-2">
                 <LinkedinIcon class="pb-1 w-5 h-5" />
-                <span>rminaberrigaray</span>
+                <a href="https://www.linkedin.com/in/rminaberrigaray/" target="_blank">
+                  rminaberrigaray
+                </a>
               </li>
             </ul>
           </section>
