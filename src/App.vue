@@ -18,7 +18,7 @@
             Rodrigo Minaberrigaray
           </h1>
           <h2 class="text-2xl font-extralight tracking-wide text-white text-center">
-            Desarrollador web full-stack
+            Desarrollador web full stack
           </h2>
         </div>
       </header>
@@ -89,10 +89,10 @@
               Presentación
             </h3>
             <p class="text-base">
-              Me considero una persona abierta y tolerante. Soy resolutivo y pragmático.
-              Además de mi rol como desarrollador, disfruto colaborando en el análisis de las soluciones.
-              Siempre con gran predispocición para las tareas que se requieran, ya sea aprender
-              nuevas tecnologías o realizar cambios sobre alguna aplicación legacy.
+              Desarrollador web full stack Ssr. con más de 5 años de experiencia. 
+              Con un perfil orientado a la resolución de problemas y gran capacidad de aprendizaje,
+              fui incorporando a mi stack distintos lenguajes y frameworks. Principalmente trabajé con PHP (Symfony) y
+              Java (Spring Boot) del lado del backend y Vue.js como framework JavaScript del lado del frontend.
             </p>
           </section>
           <section class="space-y-2">
