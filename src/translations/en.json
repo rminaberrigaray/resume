@@ -1,3 +1,91 @@
 {
-    "role": "Full stack web developer"
+    "role": "Full stack web developer",
+    "sections": {
+        "profile": {
+            "title": "Professional profile",
+            "text": "Ssr. full stack web developer with 6+ years of experience. With a problem-solving oriented profile and great learning capabilities, I gradually incorporated different languages and frameworks into my stack. I mainly worked with PHP (Symfony) and Java (Spring Boot) on the backend and with Vue.js as the JavaScript framework on the frontend."
+        },
+        "contact": {
+            "title": "Contact",
+            "mail": "rodrigo.minaberrigaray@gmail.com",
+            "location": "La Plata, Buenos Aires, Argentina",
+            "linkedin": "rminaberrigaray"
+        },
+        "studies": {
+            "title": "Education",
+            "list": [
+                {
+                    "degree": "Analyst Programmer",
+                    "period": "2012-2018",
+                    "college": "School of Computer Sciences, UNLP",
+                    "note": null
+                },
+                {
+                    "degree": "BS in Information Systems",
+                    "period": "2012-2019",
+                    "college": "School of Computer Sciences, UNLP",
+                    "note": "All but dissertation"
+                }
+            ]
+        },
+        "skills": {
+            "title": "Skills",
+            "main": {
+                "subtitle": "Main",
+                "list": [ "PHP", "Java", "HTML", "CSS", "JavaScript", "Symfony", "Spring Boot", "Vue.js", "Tailwind", "Maven", "Hibernate JPA", "SQL", "Git", "REST" ]
+            },
+            "secondary": {
+                "subtitle": "Secondary",
+                "list": [ "SOAP", "Docker", "Laravel", "Slim", "Jenkins", "Node.js", "Materialize CSS", "JSF", "SVN", "Kong" ]
+            }
+        },
+        "languages": {
+            "title": "Languages",
+            "list": [
+                {
+                    "name": "Spanish",
+                    "level": "Native"
+                },
+                {
+                    "name": "English",
+                    "level": "Intermediate"
+                }
+            ]
+        },
+        "experience": {
+            "title": "Work experience",
+            "list": [
+                {
+                    "position": "Web developer at \"Colegio de Escribanos de la Provincia de Buenos Aires\" (Notary Public Association)",
+                    "period": "July 2020 - present",
+                    "description": "As a developer, I took part in analysis and development of new applications and webservices. We switched from a monolytic approach to an ecosystem with multiple APIs, databases and web apps.",
+                    "tasks": {
+                        "subtitle": "Main activities: ",
+                        "list": [
+                            "Frontend applications with Vue.js and Tailwind CSS.",
+                            "RESTful APIs development with Spring Boot (Java).",
+                            "Minor developments with Node.js (websockets management with socket.io and PDF generation whit Puppeteer).",
+                            "Spring + JSF applications maintenance.",
+                            "Kong used as API Gateway.",
+                            "CI/CD with Gitlab + Jenkins."
+                        ]
+                    }
+                },
+                {
+                    "position": "Web developer at \"Dirección Provincial de Sistemas de Información y Tecnologías\" (Buenos Aires Province government)",
+                    "period": "May 2017 - December 2020",
+                    "description": "Member of the development team assigned to modernize organization's web applications and services. I progressively gained experience until I became one of the key references on the team, helping and training new developers.",
+                    "tasks": {
+                        "subtitle": "Main activities: ",
+                        "list": [
+                            "PHP 5.3 legacy applications maintenance. Redisign with Materialize CSS and jQuery.",
+                            "SOAP webservices development and maintenance.",
+                            "Slim Framework used to expose SOAP webservices as REST APIs.",
+                            "MVC applications with Symfony (PHP). Frontends with Vue.js and Materialize CSS."
+                        ]
+                    }
+                }
+            ]
+        }
+    }
 }

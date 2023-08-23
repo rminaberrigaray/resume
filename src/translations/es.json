@@ -1,3 +1,91 @@
 {
-    "role": "Desarrollador web full stack"
+    "role": "Desarrollador web full stack",
+    "sections": {
+        "profile": {
+            "title": "Perfil profesional",
+            "text": "Desarrollador web full stack Ssr. con más de 6 años de experiencia. Con un perfil orientado a la resolución de problemas y gran capacidad de aprendizaje, fui incorporando a mi stack distintos lenguajes y frameworks. Principalmente trabajé con PHP (Symfony) y Java (Spring Boot) en el backend y con Vue.js como framework JavaScript en el frontend."
+        },
+        "contact": {
+            "title": "Contacto",
+            "mail": "rodrigo.minaberrigaray@gmail.com",
+            "location": "La Plata, Buenos Aires, Argentina",
+            "linkedin": "rminaberrigaray"
+        },
+        "studies": {
+            "title": "Educación",
+            "list": [
+                {
+                    "degree": "Analista Programador Universitario",
+                    "period": "2012-2018",
+                    "college": "Facultad de Informática, UNLP",
+                    "note": null
+                },
+                {
+                    "degree": "Licenciatura en Sistemas",
+                    "period": "2012-2019",
+                    "college": "Facultad de Informática, UNLP",
+                    "note": "Tesina pendiente"
+                }
+            ]
+        },
+        "skills": {
+            "title": "Habilidades",
+            "main": {
+                "subtitle": "Principales",
+                "list": [ "PHP", "Java", "HTML", "CSS", "JavaScript", "Symfony", "Spring Boot", "Vue.js", "Tailwind", "Maven", "Hibernate JPA", "SQL", "Git", "REST" ]
+            },
+            "secondary": {
+                "subtitle": "Secundarias",
+                "list": [ "SOAP", "Docker", "Laravel", "Slim", "Jenkins", "Node.js", "Materialize CSS", "JSF", "SVN", "Kong" ]
+            }
+        },
+        "languages": {
+            "title": "Idiomas",
+            "list": [
+                {
+                    "name": "Español",
+                    "level": "Nativo"
+                },
+                {
+                    "name": "Inglés",
+                    "level": "Intermedio"
+                }
+            ]
+        },
+        "experience": {
+            "title": "Experiencia laboral",
+            "list": [
+                {
+                    "position": "Desarrollador web en Colegio de Escribanos de la Provincia de Buenos Aires",
+                    "period": "Julio 2020 - presente",
+                    "description": "En mi rol de desarrollador, participé en el análisis y desarrollo de nuevas aplicaciones y servicios web. Cambiamos de un enfoque monolítico a un ecosistema con múltiples APIs, bases de datos y aplicaciones web.",
+                    "tasks": {
+                        "subtitle": "Principales actividades: ",
+                        "list": [
+                            "Aplicaciones frontend con Vue.js y Tailwind CSS.",
+                            "Desarrollo de RESTful APIs con Spring Boot (Java).",
+                            "Desarrollos menores con Node.js (manejo de websockets con socket.io y generación de PDFs con Puppeteer).",
+                            "Mantenimiento de aplicaciones Spring + JSF.",
+                            "Uso de Kong como API Gateway.",
+                            "CI/CD con Gitlab + Jenkins."
+                        ]
+                    }
+                },
+                {
+                    "position": "Desarrollador web en Dirección Provincial de Sistemas de Información y Tecnologías",
+                    "period": "Mayo 2017 - diciembre 2020",
+                    "description": "Miembro del equipo de desarrollo que tuvo como finalidad modernizar las aplicaciones y servicios web del organismo. Fui ganando experiencia y logré convertirme en uno de los referentes del equipo, ayudando y capacitando a los nuevos desarrolladores.",
+                    "tasks": {
+                        "subtitle": "Principales actividades: ",
+                        "list": [
+                            "Mantenimiento de aplicaciones legacy con PHP 5.3. Rediseño con Materialize CSS y jQuery.",
+                            "Desarrollo y mantenimiento de webservices SOAP.",
+                            "Slim Framework para exponer webservices SOAP como REST APIs.",
+                            "Aplicaciones MVC con Symfony (PHP). Frontends con Materialize CSS y Vue.js."
+                        ]
+                    }
+                }
+            ]
+        }
+    }
 }
