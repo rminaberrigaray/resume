@@ -109,7 +109,7 @@
           "period": "November 2023 – March 2026",
           "tasks": {
             "list": [
-              "Built a serverless application with React and Firebase to automate display ad management.",
+              "Built a serverless application with React and Firebase for display ad automation.",
               "Integrated Gemini via Vertex AI for text translation and focal-point detection in images.",
               "Maintained and fixed bugs in the company's ERP, developed in CakePHP."
             ]
