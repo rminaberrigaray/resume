@@ -13,7 +13,7 @@ module.exports = {
         print: { "raw": "print" },  
       },
       fontFamily: {
-        'sans': ['Raleway', ...defaultTheme.fontFamily.sans],
+        'sans': ['Montserrat', ...defaultTheme.fontFamily.sans],
       },
       maxWidth: {
         "a4": "210mm"

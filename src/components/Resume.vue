@@ -92,12 +92,12 @@
     <!-- Page -->
     <div class="flex flex-col mx-auto max-w-a4 md:h-a4 print:h-a4 print:w-a4 bg-white shadow-[0_0_8px_rgba(13,12,12,0.15)] print:shadow-none">
       <!-- Name -->
-      <header class="p-8 md:h-[3.7cm] print:h-[3.7cm] flex items- justify-center space-x-10 bg-slate-700">
+      <header class="p-8 md:h-[3cm] print:h-[3cm] flex items-center justify-center space-x-10 bg-slate-700 z-10">
         <div class="space-y-1">
-          <h1 class="text-5xl font-extralight tracking-wide text-white text-center">
+          <h1 class="text-4xl font-extralight tracking-wide text-white text-center">
             Rodrigo Minaberrigaray
           </h1>
-          <h2 class="text-2xl font-extralight tracking-wide text-white text-center">
+          <h2 class="text-xl font-extralight tracking-wide text-white text-center">
             {{ messages.role }}
           </h2>
         </div>
@@ -105,22 +105,22 @@
       <div class="flex flex-1 flex-col-reverse sm:flex-row print:flex-row w-full h-full text-slate-700">
         <div class="basis-2/5 px-4 py-3 space-y-6 bg-slate-100">
           <section class="space-y-2">
-            <h3 class="text-xl font-medium uppercase border-b border-slate-400">
+            <h3 class="text-lg font-medium uppercase border-b border-slate-400">
               {{ messages.sections.contact.title }}
             </h3>
             <ul class="text-sm space-y-2 lining-nums">
               <li class="flex items-center space-x-2">
-                <EnvelopeIcon class="w-5 h-5" />
+                <EnvelopeIcon class="w-4 h-4" />
                 <a href="mailto:rodrigo.minaberrigaray@gmail.com">
                   {{ messages.sections.contact.mail }}
                 </a>
               </li>
               <li class="flex items-center space-x-2">
-                <MapPinIcon class="w-5 h-5" />
+                <MapPinIcon class="w-4 h-4" />
                 <span>{{ messages.sections.contact.location }}</span>
               </li>
               <li class="flex items-center space-x-2">
-                <LinkedinIcon class="pb-1 w-5 h-5" />
+                <LinkedinIcon class="pb-0.5 w-4 h-4" />
                 <a href="https://www.linkedin.com/in/rminaberrigaray/" target="_blank">
                   {{ messages.sections.contact.linkedin }}
                 </a>
@@ -128,52 +128,38 @@
             </ul>
           </section>
           <section class="space-y-2">
-            <h3 class="text-xl font-medium uppercase border-b border-slate-400">
+            <h3 class="text-lg font-medium uppercase border-b border-slate-400">
               {{ messages.sections.studies.title }}
             </h3>
             <div 
               v-for="study in messages.sections.studies.list"
               class="text-sm lining-nums"
             >
+              <p class="text-blue-600">
+                {{ study.period }} 
+              </p>
               <p class="font-semibold">
                 {{ study.degree }}
               </p>
-              <p class="font-medium">
-                {{ study.period }} |
+              <p class="text-slate-700">
                 <a href="https://www.info.unlp.edu.ar/" target="_blank">{{ study.college }}</a>
               </p>
-              <p v-if="study.note" class="italic">{{ study.note }}</p>
+              <p v-if="study.note" class="italic text-slate-600">{{ study.note }}</p>
             </div>
           </section>
           <section class="space-y-2">
-            <h3 class="text-xl font-medium uppercase border-b border-slate-400">
+            <h3 class="text-lg font-medium uppercase border-b border-slate-400">
               {{ messages.sections.skills.title }}
             </h3>
-            <div class="text-sm space-y-1">
+            <div v-for="skill in messages.sections.skills.list" class="text-sm">
               <div class="font-semibold">
-                {{ messages.sections.skills.main.subtitle }}
+                {{ skill.name }}
               </div>
-              <div class="inline-flex flex-wrap gap-1">
-                <span
-                  v-for="skill in messages.sections.skills.main.list" 
-                  class="px-2 py-0.5 bg-white rounded-xl font-medium text-slate-700 border border-slate-500 shadow-sm"
-                >{{ skill }}</span>
-              </div>
-            </div>
-            <div class="text-sm space-y-1">
-              <div class="font-semibold">
-                {{ messages.sections.skills.secondary.subtitle }}
-              </div>
-              <div class="inline-flex flex-wrap gap-1">
-                <span 
-                  v-for="skill in messages.sections.skills.secondary.list" 
-                  class="px-2 py-0.5 border border-slate-300 bg-white shadow-sm rounded-xl"
-                >{{ skill }}</span>
-              </div>
+              <p>{{ skill.keywords.join(", ") }}</p>
             </div>
           </section>
           <section class="space-y-2">
-            <h3 class="text-xl font-medium uppercase border-b border-slate-400">
+            <h3 class="text-lg font-medium uppercase border-b border-slate-400">
               {{ messages.sections.languages.title }}
             </h3>
             <ul class="text-sm list-disc list-inside">
@@ -185,27 +171,24 @@
         </div>
         <div class="basis-3/5 px-4 py-3 space-y-6">
           <section class="space-y-3">
-            <h3 class="text-xl font-medium uppercase border-b border-slate-400">
+            <h3 class="text-lg font-medium uppercase border-b border-slate-400">
               {{ messages.sections.profile.title }}
             </h3>
-            <p class="text-base leading-5">
+            <p class="text-sm leading-5">
               {{ messages.sections.profile.text }}
             </p>
           </section>
           <section class="space-y-3">
-            <h3 class="text-xl font-medium uppercase border-b border-slate-400">
+            <h3 class="text-lg font-medium uppercase border-b border-slate-400">
               {{ messages.sections.experience.title }}
             </h3>
             <div v-for="experience in messages.sections.experience.list">
-              <div class="text-base font-semibold">{{ experience.position }}</div>
-              <div class="text-base font-medium italic text-blue-600">{{ experience.period }}</div>
-              <p class="text-base leading-5">
-                {{ experience.description }}
-              </p>
-              <p class="text-base leading-5">
+              <div class="text-sm font-semibold">{{ experience.position }}</div>
+              <div class="text-sm text-blue-600">{{ experience.period }}</div>
+              <p class="text-sm leading-5">
                 {{ experience.tasks.subtitle }}
               </p>
-              <ul class="text-base list-none leading-5 [&>li]:before:content-['\2013'] [&>li]:before:absolute [&>li]:before:left-0 [&>li]:relative [&>li]:pl-6">
+              <ul class="text-sm list-none leading-5 [&>li]:before:content-['\2013'] [&>li]:before:absolute [&>li]:before:left-0 [&>li]:relative [&>li]:pl-6">
                 <li v-for="task in experience.tasks.list">
                   {{ task }}
                 </li>
